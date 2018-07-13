@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Vue Test</title>
+        <script src="http://static.runoob.com/assets/vue/1.0.11/vue.min.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <div v-if="1>0">
+                true
+            </div>
+            <div v-else>
+                false
+            </div>
+        </div>
+
+        <!-- JavaScript 代码需要放在尾部（要取值的的HTML元素之后） -->
+        <script>
+            new Vue({
+                el:'#app',
+            });
+        </script>
+    </body>
+</html>

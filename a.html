@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Vue Test</title>
+        <script src="http://static.runoob.com/assets/vue/1.0.11/vue.min.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            {{ message }}
+            <br>
+            <input v-model="message"/>
+        </div>
+        <!-- JavaScript 代码需要放在尾部（要取值的的HTML元素之后） -->
+        <script>
+            new Vue({
+                el:'#app',
+                data: {
+                    message:'Hello World!'
+                }
+            });
+        </script>
+    </body>
+</html>
